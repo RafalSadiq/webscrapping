@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web scraper</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Web Scraper</h1>
+  </header>
+  <main>
+    <form id="urlForm" action="/" method="POST">
+      <input type="text" id="urlInput" name="url" placeholder="Enter website URL" />
+      <button type="submit">Get insight</button>
+    </form>
+    <table id="resultTable">
+      <thead>
+        <tr>
+          <th>Domain name</th>
+          <th>Word count</th>
+          <th>Favourite</th>
+          <th>Media links</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="insightsBody"></tbody>
+    </table>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+
